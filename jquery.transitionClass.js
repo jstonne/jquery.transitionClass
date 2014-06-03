@@ -39,9 +39,9 @@ $.fn.removeClassAfter = function(classname, timer) {
 // addTransitionClass
 // removeTransitionClass
 var transitionClass = function(toggle, classname, duration) {
-    var method = toggle ? "add" : "remove", suffix = toggle ? "-in" : "-out";
-    return this[method + "TransitoryClass"](classname.replace(/ /g, suffix + " ") + suffix, duration || 1000)
-        [method + "ClassAfter"](classname);
+    var suffix = toggle ? "-in" : "-out";
+    return this.addTransitoryClass(classname.replace(/ /g, suffix + " ") + suffix, duration || 1000)
+        [(toggle ? "add" : "remove") + "ClassAfter"](classname);
 }
 
 $.fn.addTransitionClass = function(classname, duration) {
