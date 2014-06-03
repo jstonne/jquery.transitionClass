@@ -3,7 +3,7 @@ jquery.transitionClass
 
 jQuery functions to invoke classnames that has CSS3 transitions.
 
-** Note: Like jQuery, all the classname functions below support multiple classnames separated by space. **
+**Note: Like jQuery, all the classname functions below support multiple classnames separated by space.**
 
 
 ### addTransitoryClass
